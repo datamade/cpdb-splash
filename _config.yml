@@ -1,0 +1,12 @@
+port:  5000
+markdown: kramdown
+title: "Chicago Police Database"
+name: "Chicago Police Database"
+author: "Invisible Institute"
+url: http://intro.cpdb.co
+encoding: utf-8
+timezone: America/Chicago
+description: ""
+shortdesc: ""
+gems:
+  - jekyll-redirect-from

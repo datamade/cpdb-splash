@@ -1,0 +1,292 @@
+/* custom styles */
+
+body {
+  font-size: 16px;
+  background-color: #242426;
+  position: relative;
+  font-weight: 300;
+  color: #ddd;
+}
+
+a {
+  color: #cc3333;
+}
+
+a:active, a:hover, a:focus {
+  color: #cc3333;
+}
+
+h1, h2{
+  font-family: 'Alegreya', serif;
+  color: #e77960;
+}
+
+h3, h4, h5, .h3, .h4, .h5 {
+  font-family: 'Alegreya', serif;
+  font-style: italic;
+  color: #e8b19c;
+}
+
+.intro-blurb {
+  font-family: 'Alegreya', serif;
+  color: #e8b19c;
+}
+
+.info.leaflet-control {
+    background-color: RGBA(255, 255, 255, .7);
+    color: #333;
+    padding: 0 10px;
+    min-width: 250px;
+    min-height: 42px;
+}
+
+.info.leaflet-control > h4, .info.leaflet-control > h5 {
+  font-style: normal;
+  color: #333;
+}
+
+.navbar-default {
+  background-color: #0D0D0D;
+  margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav > .active > a {
+  background-color: #a50f15;
+  color: #ddd;
+}
+.navbar-default .navbar-nav > .active > a:hover {
+  background-color: #a50f15;
+  color: #ddd;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ddd;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #e77960;
+}
+.navbar-header > a.navbar-brand:hover{
+  color: #e77960;
+}
+.navbar-header > .navbar-brand{
+  font-family: 'Alegreya', serif;
+  color: #ddd;
+  padding-top: 20.5px;
+}
+
+.no-padding{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.info h4 {
+  font-size: 18px;
+  color: #777;
+}
+
+#menu { position: absolute; top: 5px; right: 10px; width: 400px; height:60px; background: transparent; z-index:10;}
+#menu a { 
+  margin: 15px 10px 0 0;
+  float: right;
+  vertical-align: baseline;
+  padding: 4px;
+  text-align: center;
+  line-height: normal;
+  color: #88888e;
+  border: 3px solid #353537;
+  background-color: #242426;
+  text-decoration: none;
+  cursor: pointer;
+}
+#menu a.selected,
+#menu a:hover { 
+  border: 3px solid #E8B19C;
+  color: #ddd;
+}
+
+.leaflet-container .leaflet-control-attribution {
+  background: rgba(0,0,0,.4);
+  color: #ccc;
+}
+.leaflet-container .leaflet-control-attribution a {
+  color: #ccc;
+}
+
+.scroll {
+  height: 550px;
+  overflow-y: scroll;
+}
+
+.citation {
+  vertical-align: super;
+  background-color: #e77960;
+  color: #333;
+  font-size: .6em;
+  font-weight: 700;
+  padding-left: 3px;
+  padding-right: 3px;
+  margin-right: 3px;
+  cursor: pointer;
+}
+
+.popover-content {
+  padding: 3px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: .8em;
+  color: #333;
+  background: #E8B19C;
+}
+
+.popover.top > .arrow::after {
+  border-top-color: #E8B19C;
+}
+.popover.top > .arrow {
+  bottom: -10px;
+}
+
+#scroll-arrow{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 2em;
+  color: #E77960;
+}
+
+.text-emphasis {
+  color: #e8b19c;
+  font-size: 2em;
+  margin-bottom: 0px;
+}
+
+.text-small, .text-small i {
+  color: #777;
+  font-size: .9em;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+#content ul > li {
+  list-style-type: square;
+  margin-bottom: 8px;
+}
+
+#call-to-action{
+  height: 200px;
+}
+
+.btn-danger {
+  background-color: #ddd;
+  border-radius: 0px;
+  border: 0px;
+  font-weight: 300;
+  color: #333;
+}
+
+.btn-danger:hover, .btn-danger:active {
+  background-color: #eee;
+  color: #333;
+}
+
+#chart-title, #chart-subtitle {
+  color: #e8b19c;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: relative;
+  top: 30px;
+}
+#chart-title{
+  font-size: .9em;
+}
+#chart-subtitle{
+  font-size: .7em;
+}
+
+.mobile-only {
+  display: none;
+}
+
+#map-nav {
+  display: none;
+}
+
+#sections {
+  display: inline-block;
+}
+
+/* medium screens */
+@media only screen and (max-width : 767px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: inline;
+  }
+
+  #map-nav {
+    display: inline-block;
+    margin-left: 15px;
+  }
+  #pink-nav{
+    color: #e77960;
+  }
+  .navbar-nav {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .navbar-default .navbar-nav > li {
+    display: inline-block;
+    list-style-type: none;
+  }
+  .navbar-default .navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    font-size: .8em;
+  }
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:active {
+    background-color: #0D0D0D;
+    color: #e77960;
+  }
+  .navbar-header > a.navbar-brand {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 30px;
+  }
+
+  .h3{
+    margin-top: 2px;
+    font-size: 1.3em;
+  }
+  .text-emphasis {
+    font-size: 1.5em;
+  }
+  .text-small {
+    font-size: .7em;
+  }
+
+  #map-image {
+    width:100%;
+    height:200px; 
+    background-image: url('/images/map.png');
+    background-size:cover;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  #map-button {
+    text-align:center;
+    margin-top: 80px;
+  }
+
+
+}
+
+/* lil screens */
+@media only screen and (max-width : 380px) {
+
+}

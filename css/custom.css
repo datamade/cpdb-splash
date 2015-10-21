@@ -2,23 +2,23 @@
 
 body {
   font-size: 16px;
-  background-color: #242426;
+  background-color: #141E2F;
   position: relative;
   font-weight: 300;
   color: #ddd;
 }
 
 a {
-  color: #cc3333;
+  color: #DA394B;
 }
 
 a:active, a:hover, a:focus {
-  color: #cc3333;
+  color: #DA394B;
 }
 
-h1, h2{
+h1, h2, .jumbotron h1, .jumbotron h2 {
   font-family: 'Alegreya', serif;
-  color: #e77960;
+  color: #DA394B;
 }
 
 h3, h4, h5, .h3, .h4, .h5 {
@@ -27,22 +27,38 @@ h3, h4, h5, .h3, .h4, .h5 {
   color: #e8b19c;
 }
 
+.jumbotron {
+  background-color: #141E2F;
+}
+
+#section-2 {
+  background-color: #EDEDEE;
+  color: #222;
+}
+
+#section-2 h1 {
+  color: #333;
+}
+
+#section-4 {
+  height: 400px;
+  color: white;
+  text-shadow: #333 0 2px 2px;
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.3)
+    ),
+    url('../images/map-bg.png') no-repeat center center;
+}
+
+#section-4 h1 {
+  color: white;
+}
+
 .intro-blurb {
   font-family: 'Alegreya', serif;
   color: #e8b19c;
-}
-
-.info.leaflet-control {
-    background-color: RGBA(255, 255, 255, .7);
-    color: #333;
-    padding: 0 10px;
-    min-width: 250px;
-    min-height: 42px;
-}
-
-.info.leaflet-control > h4, .info.leaflet-control > h5 {
-  font-style: normal;
-  color: #333;
 }
 
 .navbar-default {
@@ -51,21 +67,21 @@ h3, h4, h5, .h3, .h4, .h5 {
 }
 
 .navbar-default .navbar-nav > .active > a {
-  background-color: #a50f15;
+  background-color: #a01e2c;
   color: #ddd;
 }
 .navbar-default .navbar-nav > .active > a:hover {
-  background-color: #a50f15;
+  background-color: #a01e2c;
   color: #ddd;
 }
 .navbar-default .navbar-nav > li > a {
   color: #ddd;
 }
 .navbar-default .navbar-nav > li > a:hover {
-  color: #e77960;
+  color: #DA394B;
 }
 .navbar-header > a.navbar-brand:hover{
-  color: #e77960;
+  color: #DA394B;
 }
 .navbar-header > .navbar-brand{
   font-family: 'Alegreya', serif;
@@ -76,11 +92,6 @@ h3, h4, h5, .h3, .h4, .h5 {
 .no-padding{
   padding-left: 0px;
   padding-right: 0px;
-}
-
-.info h4 {
-  font-size: 18px;
-  color: #777;
 }
 
 #menu { position: absolute; top: 5px; right: 10px; width: 400px; height:60px; background: transparent; z-index:10;}
@@ -101,14 +112,6 @@ h3, h4, h5, .h3, .h4, .h5 {
 #menu a:hover { 
   border: 3px solid #E8B19C;
   color: #ddd;
-}
-
-.leaflet-container .leaflet-control-attribution {
-  background: rgba(0,0,0,.4);
-  color: #ccc;
-}
-.leaflet-container .leaflet-control-attribution a {
-  color: #ccc;
 }
 
 .scroll {
@@ -179,16 +182,11 @@ ul {
 }
 
 .btn-danger {
-  background-color: #ddd;
-  border-radius: 0px;
-  border: 0px;
-  font-weight: 300;
-  color: #333;
+  background-color: #DA394B;
 }
 
 .btn-danger:hover, .btn-danger:active {
-  background-color: #eee;
-  color: #333;
+  background-color: #DA394B;
 }
 
 #chart-title, #chart-subtitle {

@@ -9,6 +9,7 @@ layout: default
   <div id="section-1" class='jumbotron'>
     <div class='row'>
       <div class='col-sm-7'>
+        <h1>Chicago Police Misconduct Reports</h1>
         <p>
           Information about police abuse in Chicago has been hidden
           behind a wall of official secrecy and anonymity.</p>
@@ -85,14 +86,16 @@ layout: default
 
     <form class="form" action="/" method="GET">
       <div class='row'>
-        <div class='col-sm-6 col-sm-offset-3'>
+        <div class='col-sm-6'>
           <div class="input-group input-group-lg">
             <input type="text" class="form-control" id="search_address" placeholder="Enter an address or intersection ...">
             <span class="input-group-btn">
-              <button type="submit" class="btn btn-danger"><i class='fa fa-fw fa-search'></i></button>
+              <a href='#' class="btn btn-danger" id='search'><i class='fa fa-fw fa-search'></i></a>
             </span>
           </div>
-          
+        </div>
+        <div class='col-sm-5 col-sm-offset-1'>
+          <a class='btn btn-default btn-lg' href='http://cpdb.co'>Or browse the complaints ></a>
         </div>
       </div>
     </form>
@@ -106,9 +109,50 @@ layout: default
       Doluptate conseque reseque vel imus, sitior aut quibus alicium et volluptati ut lab in re doluptation cum estibeaque dollorerum etum ditiatiunto vel ipsam ariore enienimaio debis il maiorrum quiatur esendio.
     </p>
 
-    <p><a href='#' class='btn btn-danger btn-lg'><i class='fa fa-fw fa-envelope'></i> Contact us</a></p>
+    <p><a href='mailto:info@invisible.institute' class='btn btn-danger btn-lg'><i class='fa fa-fw fa-envelope'></i> Contact us</a></p>
     
   </div>
+
+  <p class='text-center'><a href='http://invisible.institute/'><img style='width:150px;' src='/images/invisible-institute.png' alt='Invisible Institute' title='Invisible Institute' /></a></p>
 </div>
 
 <script src="js/charts.js"></script>
+<script>
+  var geocoder = new google.maps.Geocoder();
+
+  $(function() {
+    var autocomplete = new google.maps.places.Autocomplete(document.getElementById('search_address'));
+
+    $('#search').click(function(){
+      addressSearch();
+    });
+
+    $("#search_address").keydown(function(e){
+        var key =  e.keyCode ? e.keyCode : e.which;
+        if(key === 13) {
+            $('#search').click();
+            return false;
+        }
+    });
+  });
+
+  function addressSearch(){
+    var address = $("#search_address").val();
+    var locationScope = 'chicago';
+    if (address !== "") {
+      if (address.toLowerCase().indexOf(locationScope) === -1) {
+          address = address + " " + locationScope;
+      }
+      geocoder.geocode({
+          'address': address
+      }, function (results, status) {
+        if (status === google.maps.GeocoderStatus.OK) {
+            var lat = results[0].geometry.location.lat();
+            var lng = results[0].geometry.location.lng();
+
+            window.location = "http://staging.cpdb.co/init/?lat=" + lat + "&lng=" + lng;
+          }
+      })
+    }
+  }
+</script>

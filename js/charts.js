@@ -8,7 +8,7 @@ $(function () {
             enabled: false
         },
         title: {
-            text: '95% of complaints<br />result in no punishment<br />',
+            text: 'Officer punishment<br />from complaints',
             verticalAlign: 'middle',
             floating: true
         },
@@ -30,11 +30,11 @@ $(function () {
             colorByPoint: true,
             data: [{
                 name: "No punishment given",
-                y: 95.0,
+                y: 98.53,
                 color: "#DA394B"
             }, {
                 name: "Officer recieved punishment",
-                y: 5.0,
+                y: 1.47,
                 sliced: true,
                 selected: true
             }]

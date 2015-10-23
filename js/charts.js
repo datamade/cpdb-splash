@@ -194,6 +194,63 @@ $(function () {
         }]
     });
 
+    $('#chart-findings-5').highcharts({
+        chart: {
+            type: 'column',
+            backgroundColor: "#EDEDEE"
+        },
+        credits: {
+            enabled: false
+        },
+        legend: { enabled: false },
+        title: {
+            text: 'Punishments given'
+        },
+        xAxis: {
+            categories: [
+                'Violation noted',
+                'Reprimand',
+                'Suspention less than 1 week',
+                'Suspention greater than 1 week',
+                'Termination',
+                'Penalty not served'
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Officer punishment'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y}</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Officer punishment',
+            data: [
+                {y: 37, color: '#EFC41B'},
+                {y: 41, color: '#EFC41B'},
+                {y: 40, color: '#F6692E'},
+                {y: 11, color: '#F6692E'},
+                2,
+                {y: 8, color: '#ccc'}],
+            color: "#DA394B"
+
+        }]
+    });
+
 
 });
 

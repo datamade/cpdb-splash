@@ -8,7 +8,9 @@ $(function () {
             enabled: false
         },
         title: {
-            text: 'Officer discipline'
+            text: '95% of complaints<br />result in no punishment<br />',
+            verticalAlign: 'middle',
+            floating: true
         },
         tooltip: {
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -16,7 +18,11 @@ $(function () {
         plotOptions: {
             pie: {
                 allowPointSelect: true,
-                cursor: 'pointer'
+                cursor: 'pointer',
+                innerSize: '70%',
+                dataLabels: {
+                    enabled: false,
+                }
             }
         },
         series: [{

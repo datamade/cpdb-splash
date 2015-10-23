@@ -1,7 +1,7 @@
 port:  5000
 markdown: kramdown
-title: "Chicago Police Misconduct Reports"
-name: "Chicago Police Misconduct Reports"
+title: "Citizens Police Data Project"
+name: "Citizens Police Data Project"
 author: "Invisible Institute"
 url: http://intro.cpdb.co
 encoding: utf-8

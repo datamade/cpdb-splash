@@ -119,6 +119,10 @@ h3, h4, h5, .h3, .h4, .h5 {
   color: white;
 }
 
+#chart-findings-3, #chart-findings-4 {
+  height: 300px;
+}
+
 .intro-blurb {
   font-family: 'Alegreya', serif;
   color: #e8b19c;

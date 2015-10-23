@@ -46,28 +46,24 @@ body {
 }
 
 a {
-  color: #DA394B;
+  color: #DDD;
+  text-decoration: underline;
 }
 
 a:active, a:hover, a:focus {
-  color: #DA394B;
+  color: #DDD;
 }
 
 h1, h2, .jumbotron h1, .jumbotron h2 {
   font-family: 'San Francisco', sans-serif;
-  color: #DA394B;
 }
 
 h3, h4, h5, .h3, .h4, .h5 {
   font-family: 'San Francisco', sans-serif;
-  font-style: italic;
-  color: #e8b19c;
 }
 
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
+.green {
+  color: #5D934F;
 }
 
 .jumbotron {
@@ -82,41 +78,29 @@ h3, h4, h5, .h3, .h4, .h5 {
   margin-top: 100px;
 }
 
-#section-1 {
-  height: 500px;
-  color: white;
-  text-shadow: #333 0 2px 2px;
+#intro-img {
+  height: 400px;
+  padding-top: 180px;
   background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.7), 
-      rgba(0, 0, 0, 0.7)
-    ),
-    url('../images/chicago_police_pan.jpg') no-repeat center center;
+    url('../images/map-bg.png') no-repeat center center;
 }
 
-#section-2 {
+#section-1 {
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+#section-2, #section-5 {
   background-color: #EDEDEE;
   color: #222;
 }
 
-#section-2 h1 {
+#section-2 h1, #section-5 h1 {
   color: #333;
 }
 
-#section-4 {
-  height: 400px;
-  color: white;
-  text-shadow: #333 0 2px 2px;
-  background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.3), 
-      rgba(0, 0, 0, 0.3)
-    ),
-    url('../images/map-bg.png') no-repeat center center;
-}
-
-#section-4 h1 {
-  color: white;
+#section-2 a, #section-5 a {
+  color: #333;
 }
 
 #chart-findings-3, #chart-findings-4 {
@@ -241,6 +225,10 @@ ul {
 
 #call-to-action{
   height: 200px;
+}
+
+.btn-inverse {
+  background-color: #141E2F;
 }
 
 .btn-danger {

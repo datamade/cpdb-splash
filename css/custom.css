@@ -64,12 +64,22 @@ h3, h4, h5, .h3, .h4, .h5 {
   color: #e8b19c;
 }
 
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
 .jumbotron {
   background-color: #141E2F;
 }
 
 .intro-links a {
-  margin-right: 15px;
+  margin-right: 25px;
+}
+
+.chart-explainer {
+  margin-top: 100px;
 }
 
 #section-1 {
@@ -241,6 +251,19 @@ ul {
 .btn-danger:hover, .btn-danger:active {
   background-color: #DA394B;
 }
+
+.btn-default {
+  background-color: #F6972E;
+  border-color: #F6972E;
+  text-shadow: none;
+}
+
+.btn-default:hover, .btn-default:active {
+  background-color: #F6972E;
+  border-color: #F6972E;
+}
+
+
 
 #chart-title, #chart-subtitle {
   color: #e8b19c;

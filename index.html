@@ -5,7 +5,7 @@ layout: default
 <div id="scroll-arrow" class="desktop-only">
   <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
 </div>
-<div id="content" class="col-sm-12 scroll" data-spy="scroll" data-target="#navbar">
+<div id="content" class="scroll" data-spy="scroll" data-target="#navbar">
   <div id="section-1" class='jumbotron text-center'>
     <h1>Chicago Police Misconduct Reports</h1>
     <p>
@@ -14,11 +14,13 @@ layout: default
 
     <p>Now, after years of litigation by the Invisible Institute, police misconduct files are open to the public.</p>
 
-    <p class='intro-links'><br />
-      <a class='btn btn-danger' href='#section-2'><i class='fa fa-fw fa-bar-chart'></i> Findings</a>
-      <a class='btn btn-danger' href='#section-3'><i class='fa fa-fw fa-info-circle'></i> Our story</a>
-      <a class='btn btn-danger' href='#section-4'><i class='fa fa-fw fa-search'></i> Find complaints</a>
-      <a class='btn btn-danger' href='#section-5'><i class='fa fa-fw fa-download'></i> Get the data</a>
+    <p class='intro-links hidden-xs hidden-sm'><br />
+      <strong>
+      <i class='fa fa-fw fa-bar-chart'></i> <a href='#section-2'>Findings</a>
+      <i class='fa fa-fw fa-info-circle'></i> <a href='#section-3'>Our story</a>
+      <i class='fa fa-fw fa-search'></i> <a href='#section-4'>Find complaints</a>
+      <i class='fa fa-fw fa-download'></i> <a href='#section-5'>Get the data</a>
+      </strong>
     </p>
 
   </div>
@@ -28,17 +30,34 @@ layout: default
     <div class='row'>
       <div class='col-sm-8'>
         <p>Through our initial investigations, we have discovered that the Chicago Police do not analize their own complaints data. Their investigatory system is directed toward a goal of “not knowing” about the patterns of police misconduct in order to justify inaction.</p>
-
         <p>Here are some of our initial findings: </p>
+      </div>
+    </div>
 
-        <div id='chart-findings-1'></div>
-        <p>Between 2011 and 2015, 40,000 allegations of abuse were filed agains Chicago Police officers. <strong>95% resulted in no punishment</strong></p>
+    <div class='row'>
+      <div class='col-sm-8'>
+        <div id='chart-findings-1'></div>  
+      </div>
+      <div class='col-sm-4 chart-explainer'>
+        <p>Between 2011 and 2015, 40,000 allegations of abuse were filed agains Chicago Police officers. <br /><br /><strong>95% resulted in no punishment</strong></p>
+      </div>
+    </div>
+    
+    <div class='row'>
+      <div class='col-sm-8'>
+        <div id='chart-findings-2'></div>  
+      </div>
+      <div class='col-sm-4 chart-explainer'>
+        <p>Doluptate conseque reseque vel imus, sitior aut quibus alicium et volluptati ut lab in re doluptation cum estibeaque dollorerum</p>
+      </div>
+    </div>
 
-        <div id='chart-findings-2'></div>
-        <p>Only 0.05% of complaints against repeat officers result in a major penalty. Out of 90,827 complaints in the periods of 2001-2008 and 2011-2015, only 44 resulted in 30+ days of suspension or firing.</p>
-
-        <div id='chart-findings-3'></div>
-        <p>Those filing complaints are disproportionately black, but under-represented in cases of proven abuse. Though 61% of complaints come from black Chicagoans, these complaints make up only 25% of those eventually proven.</p>
+    <div class='row'>
+      <div class='col-sm-8'>
+        <div id='chart-findings-3'></div>  
+      </div>
+      <div class='col-sm-4 chart-explainer'>
+        <p>Doluptate conseque reseque vel imus, sitior aut quibus alicium et volluptati ut lab in re doluptation cum estibeaque dollorerum</p>
       </div>
     </div>
 

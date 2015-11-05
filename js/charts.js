@@ -88,7 +88,7 @@ $(function () {
                 },
                 tooltip: {
                     headerFormat: '',
-                    pointFormat: '{point.y} complaints<br/>percentile:{point.x}'
+                    pointFormat: '{point.y} complaints<br/>Officer {point.x}'
                 }
             }
         },

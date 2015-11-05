@@ -86,6 +86,11 @@ h3, h4, h5, .h3, .h4, .h5 {
     url('../images/map-bg.png') no-repeat center center;
 }
 
+#header {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 #section-1 {
   padding-top: 0;
   padding-bottom: 20px;
@@ -110,6 +115,19 @@ h3, h4, h5, .h3, .h4, .h5 {
 
 #chart-findings-3, #chart-findings-4 {
   height: 300px;
+}
+
+div.dataTables_filter {
+  text-align: left;
+}
+
+div.dataTables_filter input {
+  width: 400px !important;
+}
+
+.glossary table {
+  background-color: #F9FAFB;
+  color: #333;
 }
 
 .intro-blurb {

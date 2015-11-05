@@ -80,6 +80,7 @@
 
   <title>Citizens Police Data Project</title>
   <link rel="stylesheet" href="css/bootstrap.darkly.min.css" />
+  <link href="css/dataTables.bootstrap.css" rel="stylesheet">
   <link rel="stylesheet" href="css/custom.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
@@ -95,9 +96,12 @@
 
 <body>
   <div class="container-fluid">
-    <div class="row">
-      {{ content }}
+    <div class='jumbotron' id='header'>
+      <div class='text-center'>
+        <h1>Citizens Police Data Project</h1>
+      </div>
     </div>
+    {{ content }}
   </div>
 
   <script src="js/analytics_lib.js"></script>

@@ -56,6 +56,7 @@ a:active, a:hover, a:focus {
 
 h1, h2, .jumbotron h1, .jumbotron h2 {
   font-family: 'San Francisco', sans-serif;
+  text-transform: uppercase;
 }
 
 h3, h4, h5, .h3, .h4, .h5 {
@@ -101,6 +102,10 @@ h3, h4, h5, .h3, .h4, .h5 {
 
 #section-2 a, #section-5 a {
   color: #333;
+}
+
+#section-2 .row {
+  margin-bottom: 100px;
 }
 
 #chart-findings-3, #chart-findings-4 {
@@ -227,8 +232,13 @@ ul {
   height: 200px;
 }
 
+.btn, .btn-lg { 
+  border-radius: 0; 
+}
+
 .btn-inverse {
   background-color: #141E2F;
+  border-radius: 0;
 }
 
 .btn-danger {

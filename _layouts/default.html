@@ -96,12 +96,27 @@
 
 <body>
   <div class="container-fluid">
-    <div class='jumbotron' id='header'>
-      <div class='text-center'>
-        <h1>Citizens Police Data Project</h1>
-      </div>
+    <div id='header' class='row'>
+        <div class='col-sm-1'>
+          <img src='/images/ii-logo-transparent.png' alt='Invisible Institute' title='Invisible Institute' style='height: 80px;'/> 
+        </div>
+        <div class='col-sm-6'>
+          <h1>Citizens Police Data Project</h1>
+        </div>
+        <div class='col-sm-5'>
+          <p id='main-nav' class='pull-right'>
+            <a href='http://cpdb.co'>Intro &amp; findings</a>
+            <a href='http://explore.cpdb.co'>Explore the data</a>
+          </p>
+        </div>
     </div>
     {{ content }}
+
+    <p class='text-center'><a href='http://invisible.institute/'><img style='width:150px;' src='/images/ii-logo-white.png' alt='Invisible Institute' title='Invisible Institute' /></a></p>
+
+    <p class='text-center'>
+      <a href='http://invisible.institute/subscribe/'>Join the Invisible Institute mailing list</a> | <a href='mailto:info@invisible.institute'>info@invisible.institute</a>
+    </p>
   </div>
 
   <script src="js/analytics_lib.js"></script>

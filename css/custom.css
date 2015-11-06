@@ -54,12 +54,12 @@ a:active, a:hover, a:focus {
   color: #DDD;
 }
 
-h1, h2, .jumbotron h1, .jumbotron h2 {
+h1, .jumbotron h1 {
   font-family: 'San Francisco', sans-serif;
   text-transform: uppercase;
 }
 
-h3, h4, h5, .h3, .h4, .h5 {
+h2, h3, h4, h5, .h3, .h4, .h5 {
   font-family: 'San Francisco', sans-serif;
 }
 
@@ -87,13 +87,22 @@ h3, h4, h5, .h3, .h4, .h5 {
 }
 
 #header {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-#section-1 {
-  padding-top: 0;
-  padding-bottom: 20px;
+#main-nav {
+  margin-top: 30px;
+
+}
+
+#main-nav a {
+  padding-right: 20px;
+}
+
+#section-0 {
+  background: white;
+  color: #333;
 }
 
 #section-2, #section-5 {
@@ -110,11 +119,7 @@ h3, h4, h5, .h3, .h4, .h5 {
 }
 
 #section-2 .row {
-  margin-bottom: 100px;
-}
-
-#chart-findings-3, #chart-findings-4 {
-  height: 300px;
+  margin-top: 100px;
 }
 
 div.dataTables_filter {
@@ -250,7 +255,7 @@ ul {
   height: 200px;
 }
 
-.btn, .btn-lg { 
+.btn, .btn-lg, .container-fluid .jumbotron, .container .jumbotron { 
   border-radius: 0; 
 }
 

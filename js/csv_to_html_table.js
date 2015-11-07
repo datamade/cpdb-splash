@@ -7,7 +7,7 @@ function init_table(options) {
   var csv_options = options.csv_options || {};
   var datatables_options = options.datatables_options || {};
 
-  $("#" + el).html("<table class='table' id='my-table'></table>");
+  $("#" + el).html("<table class='table table-striped' id='my-table'></table>");
 
   $.when($.get(csv_path)).then(
     function(data){
@@ -30,7 +30,7 @@ function init_table(options) {
         var row_html = "<tr>";
 
           row_html += "<td><strong>" + csv_data[row_id][0] + "</strong></td>";
-          row_html += "<td width='50%;'><p>" + csv_data[row_id][1] + "</p></td>";
+          row_html += "<td width='50%;'><p>" + csv_data[row_id][1] + "<br /><br /></p></td>";
           
           if (csv_data[row_id][2] == 'Complaint Process')
             row_html += "<td><label class='label label-warning'>" + csv_data[row_id][2] + "</label></td>";

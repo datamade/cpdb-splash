@@ -19,7 +19,7 @@ function init_table(options) {
       var table_head = "<thead><tr>";
 
       for (head_id = 0; head_id < csv_data[0].length; head_id++) { 
-        table_head += "<th>" + csv_data[0][head_id] + "</th>";
+        table_head += "<th></th>";
       }
 
       table_head += "</tr></thead>";

@@ -2,7 +2,10 @@ $(function () {
     $('#chart-findings-1').highcharts({
         chart: {
             backgroundColor: "#EDEDEE",
-            type: 'pie'
+            type: 'pie',
+            style: {
+                fontFamily: "'San Francisco Text', serif"
+            }
         },
         credits: {
             enabled: false
@@ -26,7 +29,7 @@ $(function () {
             }
         },
         series: [{
-            name: "Brands",
+            startAngle: -45,
             colorByPoint: true,
             data: [{
                 name: "No punishment given",
@@ -46,7 +49,10 @@ $(function () {
         chart: {
             type: 'scatter',
             zoomType: 'xy',
-            backgroundColor: "#EDEDEE"
+            backgroundColor: "#EDEDEE",
+            style: {
+                fontFamily: "'San Francisco Text', serif"
+            }
         },
         credits: {
             enabled: false
@@ -103,7 +109,10 @@ $(function () {
     $('#chart-findings-3').highcharts({
         chart: {
             type: 'column',
-            backgroundColor: "#EDEDEE"
+            backgroundColor: "#EDEDEE",
+            style: {
+                fontFamily: "'San Francisco Text', serif"
+            }
         },
         credits: {
             enabled: false
@@ -153,7 +162,10 @@ $(function () {
     $('#chart-findings-4').highcharts({
         chart: {
             type: 'column',
-            backgroundColor: "#EDEDEE"
+            backgroundColor: "#EDEDEE",
+            style: {
+                fontFamily: "'San Francisco Text', serif"
+            }
         },
         credits: {
             enabled: false
@@ -203,7 +215,10 @@ $(function () {
     $('#chart-findings-5').highcharts({
         chart: {
             type: 'column',
-            backgroundColor: "#EDEDEE"
+            backgroundColor: "#EDEDEE",
+            style: {
+                fontFamily: "'San Francisco Text', serif"
+            }
         },
         credits: {
             enabled: false

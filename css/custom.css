@@ -72,6 +72,19 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   color: #333;
   padding-top: 110px;
   padding-bottom: 100px;
+  margin-bottom: 0;
+}
+
+#section-1 {
+  background: 
+    linear-gradient(
+      rgba(255, 255, 255, 0.2), 
+      rgba(255, 255, 255, 0.2)
+    ),
+    url('../images/map-bg.jpg') no-repeat center center;
+  color: #333;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 #section-2, #section-5 {
@@ -85,6 +98,10 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 
 #section-2 a, #section-5 a {
   color: #333;
+}
+
+#section-1 a {
+  color: #222;
 }
 
 #section-2 .row {

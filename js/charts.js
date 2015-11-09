@@ -117,7 +117,6 @@ $(function () {
         credits: {
             enabled: false
         },
-        legend: { enabled: false },
         title: {
             text: 'Complaints filed by race'
         },
@@ -160,19 +159,23 @@ $(function () {
         series: [{
             name: 'Other',
             data: [7, 6, 3],
-            color: "#EFC41B"
+            color: "#EFC41B",
+            legendIndex: 3
         }, {
             name: 'Hispanic',
             data: [29, 12, 15],
-            color: "#F89931"
+            color: "#F89931",
+            legendIndex: 2
         }, {
             name: 'Black',
             data: [32, 61, 25],
-            color: "#F6692E"
+            color: "#F6692E",
+            legendIndex: 1
         }, {
             name: 'White',
             data: [32, 21, 58],
-            color: "#DA394B"
+            color: "#DA394B",
+            legendIndex: 0
         }]
     });
 

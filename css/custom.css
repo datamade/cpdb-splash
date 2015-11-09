@@ -91,6 +91,14 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   margin-top: 100px;
 }
 
+#section-3 {
+  padding-bottom: 40px;
+}
+
+#section-3 p {
+  padding-bottom: 16px;
+}
+
 div.dataTables_filter {
   text-align: left;
 }

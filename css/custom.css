@@ -1,48 +1,11 @@
-/* fonts */
-
-/** Ultra Light */
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 100;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff2");
-}
-
-/** Thin */
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 200;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff2");
-}
-
-/** Medium */
-@font-face {
-  font-family: "San Francisco";
-  font-weight: normal;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff2");
-}
-
-/** Semi Bold */
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 500;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff2");
-}
-
-/** Bold */ 
-@font-face {
-  font-family: "San Francisco";
-  font-weight: bold;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff2");
-}
-
 /* custom styles */
 
 body {
   font-size: 16px;
   background-color: #222E40;
   position: relative;
-  font-weight: 300;
   color: #eee;
+  font-family: 'San Francisco Text', sans-serif;
 }
 
 a {
@@ -55,12 +18,11 @@ a:active, a:hover, a:focus {
 }
 
 h1, .jumbotron h1 {
-  font-family: 'San Francisco', sans-serif;
   text-transform: uppercase;
 }
 
-h2, h3, h4, h5, .h3, .h4, .h5 {
-  font-family: 'San Francisco', sans-serif;
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
+  font-family: 'San Francisco Text', sans-serif;
 }
 
 .green {
@@ -108,6 +70,8 @@ h2, h3, h4, h5, .h3, .h4, .h5 {
 #section-0 {
   background: white;
   color: #333;
+  padding-top: 110px;
+  padding-bottom: 100px;
 }
 
 #section-2, #section-5 {
@@ -133,6 +97,7 @@ div.dataTables_filter {
 
 div.dataTables_filter input {
   width: 400px !important;
+  margin-left: 0;
 }
 
 .glossary table {

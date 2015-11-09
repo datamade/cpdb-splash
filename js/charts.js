@@ -123,11 +123,9 @@ $(function () {
         },
         xAxis: {
             categories: [
-                'Black',
-                'White',
-                'Hispanic',
-                'Other',
-                'Unknown'
+                'Chicago Demographics (Census 2010)',
+                'Complaints filed',
+                'Complaints resulting in officer punishment'
             ],
             crosshair: true
         },
@@ -139,8 +137,8 @@ $(function () {
         },
         tooltip: {
             headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                '<td style="padding:0"><b>{point.y}</b></td></tr>',
+            pointFormat: '<tr><td style="color:{series.color};padding:2px">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y}%</b></td></tr>',
             footerFormat: '</table>',
             shared: true,
             useHTML: true
@@ -148,67 +146,33 @@ $(function () {
         plotOptions: {
             column: {
                 pointPadding: 0.2,
-                borderWidth: 0
+                borderWidth: 0,
+                stacking: 'percent'
+            },
+            series: {
+                borderWidth: 0,
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.y:.1f}%'
+                }
             }
         },
         series: [{
-            name: 'Complaints filed',
-            data: [3398,584,514,70,353],
+            name: 'Other',
+            data: [7, 6, 3],
+            color: "#EFC41B"
+        }, {
+            name: 'Hispanic',
+            data: [29, 12, 15],
+            color: "#F89931"
+        }, {
+            name: 'Black',
+            data: [32, 61, 25],
+            color: "#F6692E"
+        }, {
+            name: 'White',
+            data: [32, 21, 58],
             color: "#DA394B"
-
-        }]
-    });
-
-    $('#chart-findings-4').highcharts({
-        chart: {
-            type: 'column',
-            backgroundColor: "#EDEDEE",
-            style: {
-                fontFamily: "'San Francisco Text', serif"
-            }
-        },
-        credits: {
-            enabled: false
-        },
-        legend: { enabled: false },
-        title: {
-            text: 'Complaints sustained by race'
-        },
-        xAxis: {
-            categories: [
-                'Black',
-                'White',
-                'Hispanic',
-                'Other',
-                'Unknown'
-            ],
-            crosshair: true
-        },
-        yAxis: {
-            min: 0,
-            title: {
-                text: 'Complaints sustained'
-            }
-        },
-        tooltip: {
-            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                '<td style="padding:0"><b>{point.y}</b></td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
-        },
-        plotOptions: {
-            column: {
-                pointPadding: 0.2,
-                borderWidth: 0
-            }
-        },
-        series: [{
-            name: 'Complaints sustained',
-            data: [27,63,7,19,4],
-            color: "#5D934F"
-
         }]
     });
 
